@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Binary Masaniello Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Binary Strategy Manager</h1>
+            <p>Masaniello Money Management System</p>
+        </header>
+
+        <div id="configSection" class="card">
+            <div class="card-header">
+                <h2>Strategy Setup</h2>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <label>Initial Capital ($)</label>
+                    <input type="number" id="initialCapital" placeholder="70" value="70">
+                </div>
+                
+                <div class="input-group">
+                    <label>Broker Payout (%)</label>
+                    <input type="number" id="payoutPercent" placeholder="80" value="80">
+                    <small>e.g., 82 for 82% return</small>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Total Trades</label>
+                        <input type="number" id="totalTrades" placeholder="15" value="15">
+                    </div>
+                    <div class="input-group">
+                        <label>Target Wins</label>
+                        <input type="number" id="targetWins" placeholder="5" value="5">
+                    </div>
+                </div>
+
+                <button class="btn-primary" onclick="startStrategy()">Initialize Strategy</button>
+                <div id="configError" class="error-msg"></div>
+            </div>
+        </div>
+
+        <div id="dashboardSection" class="hidden">
+            
+            <div class="status-bar">
+                <div class="status-item">
+                    <span>Balance</span>
+                    <strong id="displayBalance">$0.00</strong>
+                </div>
+                <div class="status-item">
+                    <span>Progress</span>
+                    <strong id="displayProgress">0 / 0</strong>
+                </div>
+                <div class="status-item">
+                    <span>Wins Needed</span>
+                    <strong id="displayWinsNeeded">0</strong>
+                </div>
+            </div>
+
+            <div class="trade-card">
+                <h3>Next Trade Amount</h3>
+                <div class="trade-amount" id="nextStakeDisplay">$0.00</div>
+                <p class="trade-info">Based on Broker Payout: <span id="displayPayout">0%</span></p>
+                
+                <div class="action-buttons">
+                    <button class="btn-win" onclick="recordTrade(true)">WIN</button>
+                    <button class="btn-loss" onclick="recordTrade(false)">LOSS</button>
+                </div>
+            </div>
+
+            <div class="target-info">
+                Expected Final Capital: <span id="targetCapitalDisplay">$0.00</span>
+            </div>
+
+            <div class="history-section">
+                <h3>Trade History</h3>
+                <table id="historyTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Result</th>
+                            <th>Stake</th>
+                            <th>P/L</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+
+            <button class="btn-reset" onclick="resetCalculator()">Reset Calculator</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
