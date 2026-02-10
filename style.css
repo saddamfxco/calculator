@@ -270,6 +270,11 @@ th {
 
 
 
+
+
+
+
+
 <!-- --- Footer & Social Media Styles --- -->
 <style>
 .app-footer {
@@ -322,18 +327,16 @@ th {
 .email { background-color: #EA4335; }
 .telegram { background-color: #0088cc; }
 .pinterest { background-color: #E60023; }
-.quora { background-color: #A82400; }
-.facebook { background-color: #3b5998; }
-.blogger { background-color: #f57d00; }
+.quora { background-color: #B92B27; }
+.facebook { background-color: #1877F2; }
+.blogspot { background-color: #FF5722; }
 .youtube { background-color: #FF0000; }
-.tiktok { background-color: #010101; }
+.tiktok { background-color: #000000; }
 .github { background-color: #333; }
-.linkedin { background-color: #0077b5; }
-
-/* Placeholder buttons */
-.instagram { background-color: #C13584; } /* Instagram */
-.x { background-color: #1DA1F2; }         /* Twitter/X */
-.onlyfans { background-color: #00BFFF; }   /* OnlyFans */
+.linkedin { background-color: #0077B5; }
+.instagram { background-color: #C13584; }
+.x { background-color: #1DA1F2; }
+.onlyfans { background-color: #00BFFF; }
 
 /* Broker Button Style */
 .broker-section {
@@ -375,12 +378,19 @@ th {
     line-height: 1.4;
 }
 
+/* Broker Button Animation */
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4); }
     70% { box-shadow: 0 0 0 10px rgba(46, 204, 113, 0); }
     100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
 }
 </style>
+
+
+
+
+
+
 
 
 
