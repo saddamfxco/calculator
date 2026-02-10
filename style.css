@@ -336,6 +336,15 @@ th {
     /* বক্সটি যেন ক্যালকুলেটরের বাইরে চলে না যায় */
     max-width: 50%; 
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+    
 }
 
 .broker-section p {
