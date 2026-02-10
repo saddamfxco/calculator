@@ -309,9 +309,10 @@ th {
 .social-btn {
     text-decoration: none;
     color: white;
-    padding: 0.7em 1.2em;
+    padding: 0.4em 0.8em;
     border-radius: 50px;
-    font-size: 1em;
+    font-size: 0.75em;
+    
     font-weight: 600;
     transition: transform 0.2s;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
