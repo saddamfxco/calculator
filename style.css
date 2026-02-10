@@ -271,43 +271,45 @@ th {
 
 
 
-
-
-
-
 /* --- Footer & Social Media Styles --- */
 .app-footer {
     text-align: center;
     margin-top: 30px;
     padding-bottom: 20px;
+    
+    /* 🔥 সাইজ কন্ট্রোল: বক্স ছোট/বড় করতে নিচের সংখ্যাটি বদলান */
+    font-size: 14px; /* উদাহরণ: 12px দিলে ছোট হবে, 16px দিলে বড় হবে */
+    
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .divider {
     height: 1px;
     background: #e0e0e0;
-    margin: 20px 0;
+    margin: 1.5em 0; /* em ইউনিট ব্যবহারের ফলে সাইজ অটো এডজাস্ট হবে */
 }
 
 .app-footer h3 {
-    font-size: 16px;
+    font-size: 1.3em; /* প্যারেন্ট ফন্টের তুলনায় ১.৩ গুণ বড় */
     color: var(--primary);
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.8em;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 1.5em;
 }
 
 .social-btn {
     text-decoration: none;
     color: white;
-    padding: 10px 15px;
-    border-radius: 50px; /* গোল বাটন */
-    font-size: 14px;
+    padding: 0.7em 1.2em; /* সাইজ অটোমেটিক এডজাস্ট হবে */
+    border-radius: 50px;
+    font-size: 1em;
     font-weight: 600;
     transition: transform 0.2s;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -326,15 +328,19 @@ th {
 /* Broker Button Style */
 .broker-section {
     background: #e8f4fd;
-    padding: 15px;
+    padding: 1.2em;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 1.5em;
     border: 1px dashed var(--accent);
+    
+    /* বক্সটি যেন ক্যালকুলেটরের বাইরে চলে না যায় */
+    max-width: 100%; 
+    box-sizing: border-box;
 }
 
 .broker-section p {
-    margin: 0 0 10px;
-    font-size: 13px;
+    margin: 0 0 0.8em;
+    font-size: 0.95em;
     font-weight: bold;
     color: var(--primary);
 }
@@ -344,17 +350,18 @@ th {
     background: linear-gradient(45deg, #2ecc71, #27ae60);
     color: white;
     text-decoration: none;
-    padding: 12px;
+    padding: 0.9em;
     border-radius: 6px;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 1em;
     animation: pulse 2s infinite;
 }
 
 .risk-disclaimer {
-    font-size: 11px;
+    font-size: 0.8em; /* মূল ফন্টের চেয়ে ছোট */
     color: #95a5a6;
-    margin-top: 20px;
+    margin-top: 1.5em;
     line-height: 1.4;
 }
 
